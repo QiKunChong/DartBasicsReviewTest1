@@ -1,0 +1,79 @@
+
+main() {
+  //#1 create a int variable called currentPosition
+  //#1.2 set the value to 0.
+
+
+  //do not change forestMap data
+  List<String> forestMap = [
+    "tree", 
+    "simpleTrap", 
+    "river", 
+    "mediumTrap",
+    "bush", 
+    "complexTrap",
+    "rock", 
+    "simpleTrap", 
+    "tree", 
+    "simpleTrap", 
+    "river", 
+    "mediumTrap", 
+    "bush", 
+    "complexTrap",
+    "rock",
+    "complexTrap",
+    "tree", 
+    "mediumTrap" 
+  ];
+  //—————-
+
+  void buildBridge() {
+    //#2 set currentPosition to increase by 1
+  }
+
+  void takeDetour() {
+    //#3 set currentPosition to increase by 1
+  }
+
+  //#4 create a function called solveTrap with a String argument called trapType.
+  //inside the function
+    //#4.1 create a boolean variable called trapSolved, set value to false.
+    //#4.2 create a switch statement, which handles the trapType
+    //and each trap should set the trapSolved to true.
+
+    //#4.3 create an if statement which checks if the trapSolved is true or false
+    //if true, currentPosition should increase by 1
+    //if false, currentPosition should decrease by 1
+
+  
+
+  int navigateForest({required List<String> forestObstacles}) {
+    //#5 create a loop sequence that solves for forestObstacles
+      //#5.1 if the forestObstacles is river, call the build a bridge function
+      //#5.2 if not river, call the takeDetour function.
+      //#5.3 if forestObstacles is a trap, call the function solveTrap 
+      //and input the forestObstacles as the trapType
+      //#5.4 replace return value with currentPosition
+    return 0;
+  }
+
+
+//----- cannot be changed below this line -----
+
+  var finalPosition = navigateForest(forestObstacles: forestMap); 
+
+
+  getFinalPosition({required thisFinalPosition}) {
+    if (thisFinalPosition == 18) {
+      print("You are a Champ!, “here is your badge of Awesomeness.");
+    } else if (thisFinalPosition >= 12 && thisFinalPosition < 18) {
+      print("well..you made it..");
+    } else if (thisFinalPosition >= 6 && thisFinalPosition < 12) {
+      print("are you alive?");
+    } else {
+      print("You are back at the beginning of the forest");
+    }
+  }
+
+  getFinalPosition(thisFinalPosition: finalPosition);
+}
